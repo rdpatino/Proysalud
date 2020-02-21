@@ -1,0 +1,22 @@
+ng new proysalud
+
+ng g c login
+ng g c users/adduser
+ng g c users/viewuser
+ng g c users/edituser
+
+ng g service services/services
+
+mpm install bootstrap --save
+
+Creación de carpeta AngularProysalud en htdocs en xampp
+connect.php
+insert.php
+
+ng g class Model/user
+ng g class Model/ApiResponse
+
+Agregar en htdocs en xampp
+.htaccess
+
+

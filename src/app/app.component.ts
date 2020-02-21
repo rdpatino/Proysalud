@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proysalud';
+  title = 'Asignación y Disponibilidad de Salones y Horarios';
 }
