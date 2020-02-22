@@ -34,7 +34,6 @@ export class AdduserComponent implements OnInit {
         age: ['', Validators.required],
         salary: ['', Validators.required]
       });
-  
     }
   
     onSubmit() {
