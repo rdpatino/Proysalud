@@ -12,6 +12,12 @@ export class ServicesService {
 
   constructor(private http: HttpClient) { }
 
+  getUserById(id: number): Observable<ApiResponse> {
+    return this.http.get<ApiResponse>(this.baseUrl + '/getById.php?id=' + id);
+  }
+  getUsers(): Observable<ApiResponse> {
+    return this.http.get<ApiResponse>(this.baseUrl + '/list.php');
+  }
   createUser(user: User): Observable<ApiResponse> {
     return this.http.post<ApiResponse>(this.baseUrl + '/insert.php', user);
   }
