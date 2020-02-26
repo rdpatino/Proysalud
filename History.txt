@@ -19,4 +19,10 @@ ng g class Model/ApiResponse
 Agregar en htdocs en xampp
 .htaccess
 
+Agregar en htdocs en xampp
+delate.php
+getById.php
+update.php
 
+Agregar en htdocs en xampp
+login.php

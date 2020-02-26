@@ -27,4 +27,7 @@ export class ServicesService {
   updateUser(user: User){
     return this.http.post<ApiResponse>(this.baseUrl + '/update.php', user);
   }
+  login(loginData): Observable<ApiResponse> {
+    return this.http.post<ApiResponse>(this.baseUrl + '/login.php', loginData);
+  }
 }

@@ -17,14 +17,15 @@ export class AdduserComponent implements OnInit {
     ) { }
 
     addForm: FormGroup;
-    //token: any;
+    token: any;
 
     ngOnInit() {
-     //this.token =  window.localStorage.getItem('token');
-     //console.log(this.token);
-     //if(!this.token){
-     //   this.router.navigate(['login']);
-     //}
+     this.token =  window.localStorage.getItem('token');
+     console.log(this.token);
+     if(!this.token){
+        this.router.navigate(['login']);
+     }
+
      this.addForm = this.formBuilder.group({
         id: [],
         username: ['', Validators.required],
@@ -47,8 +48,8 @@ export class AdduserComponent implements OnInit {
     }
   
     logOut(){
-      //window.localStorage.removeItem('token');
-      //this.router.navigate(['login']);
+      window.localStorage.removeItem('token');
+      this.router.navigate(['login']);
     }
 
 }
